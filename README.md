@@ -15,6 +15,7 @@ sys 0m0.003s
 
 
 //10
+
 ( .)(. ) Go>go build BufferedChanByteStream.go 
 ( .)(. ) Go>time ./BufferedChanByteStream ArrayByteStream.go 
 
@@ -23,7 +24,7 @@ user    0m0.024s
 sys 0m0.004s
 
 //25
-( .)(. ) Go>go build BufferedChanByteStream.go 
+
 ( .)(. ) Go>time ./BufferedChanByteStream ArrayByteStream.go 
 
 real    0m0.027s
@@ -31,7 +32,7 @@ user    0m0.021s
 sys 0m0.003s
 
 //50
-( .)(. ) Go>go build BufferedChanByteStream.go 
+
 ( .)(. ) Go>time ./BufferedChanByteStream ArrayByteStream.go 
 
 real    0m0.025s
@@ -39,7 +40,7 @@ user    0m0.020s
 sys 0m0.003s
 
 //1024 (for good measure)
-( .)(. ) Go>go build BufferedChanByteStream.go 
+
 ( .)(. ) Go>time ./BufferedChanByteStream ArrayByteStream.go 
 
 real    0m0.024s
@@ -52,11 +53,13 @@ sys 0m0.003s
 real    0m0.012s
 user    0m0.006s
 sys 0m0.007s
+
 ( .)(. ) Chan_Overhead_Test>time ./ChanByteStream ArrayByteStream.go 
 
 real    0m0.198s
 user    0m0.234s
 sys 0m0.067s
+
 ( .)(. ) Chan_Overhead_Test>time ./BufferedChanByteStream ArrayByteStream.go 
 
 real    0m0.035s
