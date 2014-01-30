@@ -3,6 +3,7 @@ package main
 import (
 	"io"
 	"os"
+	"runtime"
 )
 
 type ByteStream struct {
@@ -10,6 +11,8 @@ type ByteStream struct {
 }
 
 func main() {
+	runtime.GOMAXPROCS(runtime.NumCPU())
+
 	for i := 0; i < 100; i++ {
 		stream := New_Byte_Stream(os.Args[1])
 		for _, err := stream.get_byte(); err == nil; _, err = stream.get_byte() {
